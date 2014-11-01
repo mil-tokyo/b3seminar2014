@@ -73,6 +73,7 @@ class MultiLayerPerceptron:
             self.wHid -= eta * np.dot( np.atleast_2d(deltaHid).T, np.atleast_2d(input) )
             self.wOut -= eta * np.dot( np.atleast_2d(deltaOut).T, np.atleast_2d(hidden_act) )
 
+
     def test(self, sample):
         """ Test perceptron
         Function Inputs:
